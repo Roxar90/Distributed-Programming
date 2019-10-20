@@ -1,2 +1,2 @@
 # Distributed-Programming
-Exercises from course
+Exercises from course of Distributed Programming
