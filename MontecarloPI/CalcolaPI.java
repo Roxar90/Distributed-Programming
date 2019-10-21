@@ -1,4 +1,4 @@
-import java.util.Random;
+//import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class CalcolaPI extends Thread {
@@ -16,7 +16,7 @@ public class CalcolaPI extends Thread {
 	}
 
 	public void run() {
-		/*instead of Random class i will use ThreadLocalRandom class that is safe for threads
+		/*instead of Random class i will use ThreadLocalRandom class that is safe for threads use
 		Random rand = new Random();*/
 		
 		ThreadLocalRandom rand = ThreadLocalRandom.current();
@@ -27,8 +27,8 @@ public class CalcolaPI extends Thread {
 			double a = rand.nextDouble();
 			double b = rand.nextDouble();
 
-			double centro = a*a + b*b;
-			if (centro < 1) {
+			
+			if ((a*a + b*b) < 1) {
 				approximation++;
 
 			}
